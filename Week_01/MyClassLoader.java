@@ -1,5 +1,3 @@
-package jvm.week01.z4;
-
 /**
  * 第一课作业2
  * @author deepin

@@ -1,4 +1,4 @@
-package jvm.week01.z4;
+
 
 import sun.misc.IOUtils;
 
@@ -13,7 +13,7 @@ public class LoadClassTest {
     public static void main(String[] args) throws Exception {
         InputStream inputStream = LoadClassTest.class.getResourceAsStream("Hello.xlass");
         //获取加密后的class文件字节数组
-        byte[] encodeBytes = IOUtils.readAllBytes(inputStream);
+        byte[] encodeBytes = IOUtils.readFully(inputStream,0,false);
 
         //获取加密前的class文件字节数组
         byte[] decodeBytes = new byte[encodeBytes.length];
